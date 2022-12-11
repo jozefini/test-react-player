@@ -23,13 +23,15 @@ export default function ChangeLayout() {
         </button>
         ...etc
       </div>
-      <button
-        onClick={() => {
-          setSrc('')
-        }}
-      >
-        Stop player
-      </button>
+      <div className="change-layouts">
+        <button
+          onClick={() => {
+            setSrc('')
+          }}
+        >
+          Stop player
+        </button>
+      </div>
     </>
   )
 }
