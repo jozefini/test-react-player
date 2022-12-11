@@ -35,3 +35,10 @@
 .music-player--hidden {
   bottom: -100%;
 }
+
+.change-layouts {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ChangeLayout from '../components/ChangeLayout'
 import ALL_SONGS from '../data/playlist'
 import usePlayerStore from '../store/store'
 
@@ -40,6 +41,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+        <ChangeLayout />
       </div>
     </div>
   )

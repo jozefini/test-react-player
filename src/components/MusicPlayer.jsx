@@ -9,6 +9,7 @@ export default function MusicPlayer() {
   const isPlaying = usePlayerStore((state) => state.isPlaying)
   const setPlaying = usePlayerStore((state) => state.setPlaying)
   const setPaused = usePlayerStore((state) => state.setPaused)
+  const layout = usePlayerStore((state) => state.layout)
 
   const playerClassName = `music-player ${
     src ? 'music-player--active' : 'music-player--hidden'
@@ -30,7 +31,7 @@ export default function MusicPlayer() {
       <AudioPlayer
         ref={playerRef}
         src={src}
-        layout="horizontal"
+        layout={layout}
         onPlay={setPlaying}
         onPause={setPaused}
       />
