@@ -1,0 +1,25 @@
+.container {
+  padding: 3rem 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  border: 2px solid #ddd;
+  border-radius: 2rem;
+}
