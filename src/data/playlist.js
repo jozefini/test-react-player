@@ -1,3 +1,4 @@
+// This is a simulation of playlist data coming from "REST-API"
 export default [
   {
     id: 1,
