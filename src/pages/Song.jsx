@@ -1,12 +1,15 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 export default function SongPage() {
-  const { songId } = useParams();
+  const { songId } = useParams()
+
   return (
     <div className="container">
       <div className="inner">
-        <h1>Song ID: {songId || 'NaN'}</h1>
+        <Link to="/">Back to homepage</Link>
+        <h1>Single page</h1>
+        <p>Song ID: {songId}</p>
       </div>
     </div>
   )

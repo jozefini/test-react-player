@@ -6,6 +6,7 @@ specifiers:
   '@vitejs/plugin-react': ^3.0.0
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-h5-audio-player: ^3.8.6
   react-router-dom: ^6.4.5
   vite: ^4.0.0
   zustand: ^4.1.5
@@ -13,6 +14,7 @@ specifiers:
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-h5-audio-player: 3.8.6_biqbaboplfbrettd7655fr4n2y
   react-router-dom: 6.4.5_biqbaboplfbrettd7655fr4n2y
   zustand: 4.1.5_react@18.2.0
 
@@ -213,6 +215,13 @@ packages:
       '@babel/core': 7.20.5
       '@babel/helper-plugin-utils': 7.20.2
     dev: true
+
+  /@babel/runtime/7.20.6:
+    resolution: {integrity: sha512-Q+8MqP7TiHMWzSfwiJwXCjyf4GYA4Dgw3emg/7xmwsdLJOZUp+nMqcOwOzzYheuM1rhDu8FSj2l0aoMygEuXuA==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.11
+    dev: false
 
   /@babel/template/7.18.10:
     resolution: {integrity: sha512-TI+rCtooWHr3QJ27kJxfjutghu44DLnasDMwpDqCXVTal9RLp3RSYNh4NdBrRP2cQAoG9A8juOQl6P6oZG4JxA==}
@@ -447,6 +456,18 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify/icons-mdi/1.1.47:
+    resolution: {integrity: sha512-6AZfvWru20Rl9pXULStkVvTWnua6VG56zOIKdkCzLh25XVeTDEp6f1dL7iX9w+way5+1hI0BBuqTQd61qYaKdg==}
+    dev: false
+
+  /@iconify/react/3.2.2_react@18.2.0:
+    resolution: {integrity: sha512-z3+Jno3VcJzgNHsN5mEvYMsgCkOZkydqdIwOxjXh45+i2Vs9RGH68Y52vt39izwFSfuYUXhaW+1u7m7+IhCn/g==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -744,6 +765,19 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-h5-audio-player/3.8.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-eyViI47jRRybCcCkGdoAMd6yfhg3UMyXp39mqOWCbNQfAYI8U6zC0+0DLZjhrB7//DJtHhZx8h1q99HMxYkMWQ==}
+    peerDependencies:
+      react: ^16.3.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.3.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@babel/runtime': 7.20.6
+      '@iconify/icons-mdi': 1.1.47
+      '@iconify/react': 3.2.2_react@18.2.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /react-refresh/0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
@@ -777,6 +811,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /regenerator-runtime/0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
 
   /resolve/1.22.1:
