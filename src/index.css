@@ -36,6 +36,7 @@ h1 {
   line-height: 1.1;
 }
 
+.media-player__download a,
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -47,9 +48,12 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.media-player__download a:hover,
 button:hover {
   border-color: #646cff;
 }
+.media-player__download a:active,
+.media-player__download a:focus-visible,
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -63,6 +67,7 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
+  .media-player__download a,
   button {
     background-color: #f9f9f9;
   }

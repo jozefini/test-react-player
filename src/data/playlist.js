@@ -1,5 +1,4 @@
 import song7 from '../assets/songs/song-7.mp3'
-import song6 from '../assets/songs/song-6.mp3'
 
 // This is a simulation of playlist data coming from "REST-API"
 export default [
@@ -7,12 +6,12 @@ export default [
     id: 1,
     title: 'Song 1',
     slug: 'song-1',
-    src: song6,
+    src: 'https://res.cloudinary.com/dwmvth7hx/video/upload/fl_attachment/v1670830647/song-6_ekxdpk.mp3',
   },
   {
     id: 2,
     title: 'Song 2',
     slug: 'song-2',
-    src: song7,
+    src: 'https://res.cloudinary.com/dwmvth7hx/video/upload/fl_attachment/v1670831134/song-7_xbrcxr.mp3',
   },
 ]

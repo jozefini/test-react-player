@@ -57,3 +57,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.media-player__download a,
+.media-player__download a:hover {
+  color: #fff;
+}
