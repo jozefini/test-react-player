@@ -3,6 +3,20 @@ import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import usePlayerStore from '../store/store'
 
+const DownloadIcon = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+    strokeWidth={1.6}
+  >
+    <polyline fill="none" stroke="#000" points="14,10 9.5,14.5 5,10"></polyline>
+    <rect x="3" y="17" width="13" height="1.6"></rect>
+    <line fill="none" stroke="#000" x1="9.5" y1="13.91" x2="9.5" y2="3"></line>
+  </svg>
+)
+
 export default function MusicPlayer() {
   const playerRef = useRef(null)
   const src = usePlayerStore((state) => state.src)
@@ -35,6 +49,13 @@ export default function MusicPlayer() {
         onPlay={setPlaying}
         onPause={setPaused}
       />
+      {src && (
+        <div className="media-player__download">
+          <a href={src} download target="_blank">
+            <DownloadIcon />
+          </a>
+        </div>
+      )}
     </div>
   )
 }
