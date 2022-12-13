@@ -1,4 +1,5 @@
-import song7 from '../assets/songs/song-7.mp3'
+// import song6 from '../assets/songs/song-6.mp3'
+// import song7 from '../assets/songs/song-7.mp3'
 
 // This is a simulation of playlist data coming from "REST-API"
 export default [
